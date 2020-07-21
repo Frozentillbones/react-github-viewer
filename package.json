@@ -1,0 +1,53 @@
+{
+  "name": "gh-viewer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "browserslist": "ie >= 9, last 5 version",
+  "scripts": {
+    "webp": "node getWebp.js",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open",
+    "stats": "webpack --json > stats.json && webpack-bundle-analyzer stats.json"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/runtime": "^7.9.6",
+    "autoprefixer": "^9.7.6",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.5.3",
+    "eslint": "^7.0.0",
+    "eslint-loader": "^4.0.2",
+    "file-loader": "^6.0.0",
+    "html-webpack-injector": "^1.1.2",
+    "html-webpack-plugin": "^4.3.0",
+    "image-webpack-loader": "^6.0.0",
+    "imagemin": "^7.0.1",
+    "imagemin-webp": "^5.1.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "svg-url-loader": "^6.0.0",
+    "terser-webpack-plugin": "^3.0.1",
+    "webpack": "^4.43.0",
+    "webpack-bundle-analyzer": "^3.7.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.8.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

@@ -1,0 +1,89 @@
+.app {
+  display: grid;
+}
+
+header, main {
+  padding: 8px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+header {
+  background-color: #2c2622;
+  display: flex;
+  .finder {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    &-input {
+      width: 100%;
+    }
+    &-send {
+      margin: 0 0 0 16px;
+      padding: 4px 8px;
+    }
+  }
+}
+
+.layout {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  .user {
+    width: calc(30% - 68px);
+    &-upper {
+      text-align: center;
+      background-color: #d5d0cc;
+      padding: 8px;
+      color: #444;
+      &__img {
+        width: 96%;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+      &__name {
+        padding: 16px 0 0;
+      }
+    }
+    &-lower {
+      margin: 8px 0 0;
+      background-color: #d5d0cc;
+      color: #000;
+      display: flex;
+      justify-content: space-around;
+      padding: 16px 0;
+    }
+  }
+  .repos {
+    width: calc(70% + 52px);
+  }
+  .repo {
+    padding: 8px;
+    background-color: #d5d0cc;
+    color: #000;
+    margin: 0 0 8px;
+    &-footer  {
+      margin: 16px 0 0;
+      display: flex;
+      justify-content: flex-end;
+      .icon {
+        &:nth-child(1) {
+          margin: 0 16px 0;
+        }
+      }
+    }
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
